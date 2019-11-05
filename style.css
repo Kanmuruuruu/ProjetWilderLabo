@@ -5,6 +5,7 @@
 body{
     margin: 0px;
     padding: 0px;
+    background-color: white;
 }
 
 
@@ -69,15 +70,6 @@ body{
         height: 30px;
         position: absolute;
     }
-}
-body{
-    margin: 0px;
-    padding: 0px;
-    background-color: white;
-}
-
-nav{
-    display: none;
 }
 
 .services img{
