@@ -1,8 +1,12 @@
-/*FABLAB*/
-
 @font-face{
     font-family: "theSans";
     src: url("Polices/thesans/TheSans-B4SemiLight.otf") format("otf");
+}
+
+#Services h3{
+    text-align: center;
+    margin: 40px;
+    font-size: 2em;
 }
 
 #image1 {
@@ -22,13 +26,50 @@
     background-repeat: no-repeat; background-position: center;
 }
 
+#title{
+    margin-left: 25px;
+    margin-top: 15px;
+}
+
+#text{
+    margin: 150px 75px;
+    font-size: 1.2em;
+}
+
+#text2{
+    display: flex;
+    flex-direction: column;
+}
+
+#color{
+    background: #e3342f;
+    height: 30px;
+    margin-bottom: 15px;
+}
+
+#color2{
+    background: #e3342f;
+    height: 30px;
+    margin-top: 15px;
+}
+
+#float{
+    display: flex;
+    
+}
+
+#text2{
+    text-align: center;
+}
+
 #slider1 {
     position: relative;
-    width: 100%;
+    width: 50%;
     height: 500px;
     margin: 0 auto;
     overflow: hidden;
     background: #ffffff;
+    
 }
 
 .slides {
@@ -38,6 +79,7 @@
     width: calc(100% * 4);
     height: 100%;
     animation: slide 20s infinite;
+
 }
 
 .image {
@@ -69,73 +111,53 @@
     }
 }
 
-
 /*SERVICE ANNEXES*/
 
-#image5 {
-    background: url('Images/delirium.jpg'); background-size: contain;
-    background-repeat: no-repeat; background-position: center;
-}
-#image6 {
-    background: url('Images/salleSportExt.jpg'); background-size: contain;
-    background-repeat: no-repeat; background-position: center;
-}
-#image7 {
-    background: url('Images/salleSportInt.jpg'); background-size: contain;
-    background-repeat: no-repeat; background-position: center;
-}
-#image8 {
-    background: url('Images/studio.jpg'); background-size: contain;
-    background-repeat: no-repeat; background-position: center;
-}
-
-
-#slider2 {
-    position: relative;
-    width: 95%;
-    height: 500px;
-    margin: 0 auto;
-    overflow: hidden;
-    background: #ffffff;
-}
-
-.slides1 {
-    position: absolute;
+.servicesAnnexes {
     display: flex;
-    left: 0;
-    width: calc(100% * 4);
-    height: 100%;
-    animation: slide 20s infinite;
+    justify-content: space-evenly;
+    flex-direction: row;
+    width: 100%;
+    background: #ffffff;
+    margin-bottom: 15px;
 }
 
-.images {
-    width: calc(100% / 4);
-    height: auto;
+#titi{
+    text-align: center;
+    margin: 15px;
+    font-size: 2em;
 }
 
-@keyframes slide {
-    10% {
-        left: 0;
-    }
-    15% {
-        left: -100%;
-    }
-    25% {
-        left: -100%;
-    }
-    33% {
-        left: -200%;
-    }
-    50% {
-        left: -200%;
-    }
-    55% {
-        left: -300%;
-    }
-    75% {
-        left: -300%;
-    }
+.IMG{
+    text-align: center;
 }
+.IMG img{
+    opacity: 0.5;
+}
+
+.IMG:hover img{
+    opacity: 1;
+}
+
+.IMG:hover{
+    opacity:1;
+}
+
+.IMG h3{
+    color: black;
+    transition-duration: 0.5s;
+    transform: translateY(150px);
+    opacity:1;
+}
+
+.IMG:hover h3 {
+    color: #ffffff;
+    transform: translateY(0);
+}
+
+
+
+
 *{
     padding: 0;
     margin: 0;
@@ -240,7 +262,6 @@ body{
     background-color: #e3342f;
     min-height: 100px;
     color: White;
-    font-size: 20px;
     text-align: justify;
     text-justify: inter-word;
 }
@@ -286,6 +307,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0;
+    padding: 0;
     z-index: 1;
     transform: translateY(100px);
     /*border: 2px solid #e3342f;*/
@@ -300,6 +323,7 @@ body{
     transition: 0.5s;
     color: #e3342f;
     text-align: center;
+    font-size: 0.8em;
 }
 .container .card:hover .face.face1 .content{
     opacity: 1;
@@ -313,7 +337,7 @@ body{
     padding: 0;
     color: #111;
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1em;
 }
 
  .container .card .face.face2{
@@ -343,10 +367,14 @@ body{
 }
 
 .content.techno{
-    max-width: 215px;
+    padding: 5px;
+    width: 200px;
+    position: relative;
 }
 .content.nekoe{
-    max-width: 215px;
+    padding: 5px;
+    width: 200px;
+    position: relative;
 }
 
 .logoEntreprises{
