@@ -18,13 +18,50 @@
 }
 
 
+#title{
+    margin-left: 25px;
+    margin-top: 15px;
+}
+
+#text{
+    margin: 150px 75px;
+    font-size: 1.2em;
+}
+
+#text2{
+    display: flex;
+    flex-direction: column;
+}
+
+#color{
+    background: #e3342f;
+    height: 30px;
+    margin-bottom: 15px;
+}
+
+#color2{
+    background: #e3342f;
+    height: 30px;
+    margin-top: 15px;
+}
+
+#float{
+    display: flex;
+    
+}
+
+#text2{
+    text-align: center;
+}
+
 #slider1 {
     position: relative;
-    width: 100%;
+    width: 50%;
     height: 500px;
     margin: 0 auto;
     overflow: hidden;
     background: #ffffff;
+    
 }
 
 .slides {
@@ -34,6 +71,7 @@
     width: calc(100% * 4);
     height: 100%;
     animation: slide 20s infinite;
+
 }
 
 .image {
@@ -65,73 +103,53 @@
     }
 }
 
-
 /*SERVICE ANNEXES*/
 
-#image5 {
-    background: url('Images/delirium.jpg'); background-size: contain;
-    background-repeat: no-repeat; background-position: center;
-}
-#image6 {
-    background: url('Images/salleSportExt.jpg'); background-size: contain;
-    background-repeat: no-repeat; background-position: center;
-}
-#image7 {
-    background: url('Images/salleSportInt.jpg'); background-size: contain;
-    background-repeat: no-repeat; background-position: center;
-}
-#image8 {
-    background: url('Images/studio.jpg'); background-size: contain;
-    background-repeat: no-repeat; background-position: center;
-}
-
-
-#slider2 {
-    position: relative;
-    width: 95%;
-    height: 500px;
-    margin: 0 auto;
-    overflow: hidden;
-    background: #ffffff;
-}
-
-.slides1 {
-    position: absolute;
+.servicesAnnexes {
     display: flex;
-    left: 0;
-    width: calc(100% * 4);
-    height: 100%;
-    animation: slide 20s infinite;
+    justify-content: space-evenly;
+    flex-direction: row;
+    width: 100%;
+    background: #ffffff;
+    margin-bottom: 15px;
 }
 
-.images {
-    width: calc(100% / 4);
-    height: auto;
+#titi{
+    text-align: center;
+    margin: 15px;
+    font-size: 2em;
 }
 
-@keyframes slide {
-    10% {
-        left: 0;
-    }
-    15% {
-        left: -100%;
-    }
-    25% {
-        left: -100%;
-    }
-    33% {
-        left: -200%;
-    }
-    50% {
-        left: -200%;
-    }
-    55% {
-        left: -300%;
-    }
-    75% {
-        left: -300%;
-    }
+.IMG{
+    text-align: center;
 }
+.IMG img{
+    opacity: 0.5;
+}
+
+.IMG:hover img{
+    opacity: 1;
+}
+
+.IMG:hover{
+    opacity:1;
+}
+
+.IMG h3{
+    color: black;
+    transition-duration: 0.5s;
+    transform: translateY(150px);
+    opacity:1;
+}
+
+.IMG:hover h3 {
+    color: #ffffff;
+    transform: translateY(0);
+}
+
+
+
+
 *{
     padding: 0;
     margin: 0;
@@ -146,7 +164,10 @@ body{
 .navigator{
     background-color: #e3342f;
     text-align: center;
-    position: sticky;
+    position: fixed;
+    top: 0;
+    width:100%;
+    z-index:10000;
 
 }
 
@@ -163,12 +184,10 @@ body{
     background-color: white;
     border: 2px solid #e3342f;    
 }
+
 .navigator a{
     text-decoration: none;
     color: white;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    
-    
 }
 .navigator li:hover a{
     color:#e3342f;
@@ -187,10 +206,13 @@ body{
         margin: 0;
         padding: 0;
         display: flex;
+        justify-content: space-around;
+        -ms-align-items: center;
+        align-items: center;
+        min-height: 8vh;
+        font-family: 'Poppins', sans-serif;
+        background-color:#e3342f;
 
-    }
-
-    .navigator ul{
     }
 
     .navigator li{
@@ -204,16 +226,50 @@ body{
         height: 30px;
         position: absolute;
     }
+    
+
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: white;
+    font-family: 'theSans','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#LeLabo{
+    background-image: url(Images/Labo2.jpg);
+    margin: 40px 0 0 0;
+    padding: 0;
+    min-height: 400px;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+
+.descriLabo{
+    background-color: #e3342f;
+    min-height: 100px;
+    color: White;
+    font-size: 20px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+.descriLabo p{
+    margin: 0;
+    padding:50px;
+    line-height: 50px;
 }
 
 .services img{
-    width: 100px;
-    height: 100px;
+    width: 48px;
+    height: 48px;
 }
 
-
 .services{
-    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -228,6 +284,8 @@ body{
 
 .container .card{
     position: relative;
+    width: 100%;
+    margin: 10px;
 }
 
 .container .card .face{
@@ -238,29 +296,31 @@ body{
 
 .container .card .face.face1{
     position: relative;
-    background: #666;
+    background: #EEE;
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 1;
     transform: translateY(100px);
+    /*border: 2px solid #e3342f;*/
 }
 .container .card:hover .face.face1{
     transform: translateY(0px);
-    background-color: #EEE;
+    background-color: white;
+    border: none;
 }
 
 .container .card .face.face1 .content{
     transition: 0.5s;
-    color: #fff;
+    color: #e3342f;
     text-align: center;
 }
 .container .card:hover .face.face1 .content{
     opacity: 1;
 }
 .container .card:hover .face.face1 .content img{
-    max-width: 75px;
-    max-height: 75px;
+    max-width: 48px;
+    max-height: 48px;
 }
 .container .card:hover .face.face1 .content h3{
     margin: 10px 0 0;
@@ -278,31 +338,51 @@ body{
     align-items: center;
     transform: translateY(-100px);
     padding:5px;
+    font-size: 14px;
+    color:white;
  }
 
  .container .card:hover .face.face2{
     transform: translateY(0px);
+    color: #111;
  }
 
  .container .card .face.face2 .content p{
     margin: 0;
     padding: 0;
  }
+.content h4{
+    margin: 0;
+    padding: 0;
+}
 
- .container .card .face.face2 .content a{
-    margin: 15px 0 0;
-    display: inline-block;
-    text-decoration: none;
-    font-weight: 900;
-    color: #666;
-    padding: 5px;
-    border: 1px solid #666;
- }
+.content.techno{
+    max-width: 215px;
+}
+.content.nekoe{
+    max-width: 215px;
+}
 
- .container .card .face.face2 .content a:hover{
-    background: #666;
-    color: #fff;
- }
+.logoEntreprises{
+    display:flex;
+    justify-content: center;
+}
+.logoEntreprises img{
+    width: auto;
+    height: 150px;
+    margin: 0px 100px 100px 100px;
+}
+
+.phrase{
+    margin: 0px 15% 50px 15%;
+    width:80%;
+
+}
+
+.phrase p::first-letter{
+    color: #e3342f;
+    font-size:5rem;
+}
 
 
  @media screen and (max-width: 720px) {
@@ -312,38 +392,83 @@ body{
        align-items: center;
        position: relative;
        width:100%;
+       margin: 0;
+       padding: 0;
        flex-flow: wrap;
        flex-direction: column;
-       /*background-image:url(Images/Labo.jpeg);
-       background-size: contain;
-       background-repeat: no-repeat;
-       background-attachment: fixed;*/
     }
     .container .card{
+        margin: 0;
+        padding: 0;
         position: relative;
         width: 100%;
     }
 
      .container .card .face.face1 .content img{
-        max-width: 50px;
-        max-height: 50px;
+        max-width: 40px;
+        max-height: 40px;
     }
 
      .container .card:hover .face.face1 .content img{
-        max-width: 50px;
-        max-height: 50px;
+        max-width: 40px;
+        max-height: 40px;
     }
     
     .container .card .face.face1{
+        background-color: #EEE;
         transform: translateY(0);
     }
     .container .card .face.face2{
         transform: translateY(0);
+        font-size: 14px;
+    }
+    .container .card .face.face1 h3{
+        color: #666;
+    }
+
+    .container .card .face.face2 {
+        color:#111;
+        width: 100%;
+    }
+    .content{
+        margin:2px;
+        padding:2px;
+    }
+    .content h4{
+        margin: 2px;
+        padding: 0;
+        font-size: 16px;
+        text-transform: uppercase;
+    }
+
+    #LeLabo{
+        background-image: url(Images/Labo2.jpg);
+        margin: 30 0 0 0;
+        padding: 0;
+        min-height: 100px;
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+    }
+
+    .descriLabo{
+        margin: 0;
+        padding: 0;
+        font-size:12px;
+    }
+    .descriLabo p{
+        padding: 25px 7px;
+    }
+    .logoEntreprises img{
+        display:none;
+    }
+    .phrase p::first-letter{
+        line-height: 1rem;
     }
 }
 
 .labo-footer{
-	margin: 0;
+    margin: 0px;
+    padding: 0px;
 	background-color: #e3342f;
 	width:100%;
 	color: white;
@@ -352,13 +477,18 @@ body{
 	align-content: center;
 	flex-direction: column;
 	text-align: center;
-	font-size: 13px;
+	font-size: 15px;
 	align-items: stretch;
 }
 .tel{
 	display : inline;
 	align-content: space-around;
 	font-size: 14px;
+}
+
+.footer-center{
+    padding: 5px;
+    line-height: 30px;
 }
 
 .tel a{
@@ -379,11 +509,6 @@ a {
 }
 
 .footer-author{
-	position: center;
-	font-size: 13px;
-}
-
-.footer-author p:nth-child(1){
 	position: center;
 	font-size: 13px;
 }
