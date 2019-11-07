@@ -1,5 +1,10 @@
 /*FABLAB*/
 
+@font-face{
+    font-family: "theSans";
+    src: url("Polices/thesans/TheSans-B4SemiLight.otf") format("otf");
+}
+
 #image1 {
     background: url('Images/industryLab.png'); background-size: contain;
     background-repeat: no-repeat; background-position: center;
@@ -16,7 +21,6 @@
     background: url('Images/industryLab.png'); background-size: contain;
     background-repeat: no-repeat; background-position: center;
 }
-
 
 #slider1 {
     position: relative;
@@ -166,12 +170,10 @@ body{
     background-color: white;
     border: 2px solid #e3342f;    
 }
+
 .navigator a{
     text-decoration: none;
     color: white;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    
-    
 }
 .navigator li:hover a{
     color:#e3342f;
@@ -190,10 +192,13 @@ body{
         margin: 0;
         padding: 0;
         display: flex;
+        justify-content: space-around;
+        -ms-align-items: center;
+        align-items: center;
+        min-height: 8vh;
+        font-family: 'Poppins', sans-serif;
+        background-color:#e3342f;
 
-    }
-
-    .navigator ul{
     }
 
     .navigator li{
@@ -207,6 +212,8 @@ body{
         height: 30px;
         position: absolute;
     }
+    
+
 }
 *{
     margin: 0;
@@ -217,7 +224,7 @@ body{
     margin: 0px;
     padding: 0px;
     background-color: white;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'theSans','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 #LeLabo{
@@ -240,11 +247,12 @@ body{
 .descriLabo p{
     margin: 0;
     padding:50px;
+    line-height: 50px;
 }
 
 .services img{
-    width: 100px;
-    height: 100px;
+    width: 48px;
+    height: 48px;
 }
 
 .services{
@@ -274,29 +282,31 @@ body{
 
 .container .card .face.face1{
     position: relative;
-    background: #666;
+    background: #EEE;
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 1;
     transform: translateY(100px);
+    /*border: 2px solid #e3342f;*/
 }
 .container .card:hover .face.face1{
     transform: translateY(0px);
-    background-color: #EEE;
+    background-color: white;
+    border: none;
 }
 
 .container .card .face.face1 .content{
     transition: 0.5s;
-    color: #fff;
+    color: #e3342f;
     text-align: center;
 }
 .container .card:hover .face.face1 .content{
     opacity: 1;
 }
 .container .card:hover .face.face1 .content img{
-    max-width: 75px;
-    max-height: 75px;
+    max-width: 48px;
+    max-height: 48px;
 }
 .container .card:hover .face.face1 .content h3{
     margin: 10px 0 0;
@@ -315,10 +325,12 @@ body{
     transform: translateY(-100px);
     padding:5px;
     font-size: 14px;
+    color:white;
  }
 
  .container .card:hover .face.face2{
     transform: translateY(0px);
+    color: #111;
  }
 
  .container .card .face.face2 .content p{
@@ -329,6 +341,35 @@ body{
     margin: 0;
     padding: 0;
 }
+
+.content.techno{
+    max-width: 215px;
+}
+.content.nekoe{
+    max-width: 215px;
+}
+
+.logoEntreprises{
+    display:flex;
+    justify-content: center;
+}
+.logoEntreprises img{
+    width: auto;
+    height: 150px;
+    margin: 0px 100px 100px 100px;
+}
+
+.phrase{
+    margin: 0px 15% 50px 15%;
+    width:80%;
+
+}
+
+.phrase p::first-letter{
+    color: #e3342f;
+    font-size:5rem;
+}
+
 
  @media screen and (max-width: 720px) {
     .services{
@@ -370,6 +411,11 @@ body{
     .container .card .face.face1 h3{
         color: #666;
     }
+
+    .container .card .face.face2 {
+        color:#111;
+        width: 100%;
+    }
     .content{
         margin:2px;
         padding:2px;
@@ -398,11 +444,17 @@ body{
     .descriLabo p{
         padding: 25px 7px;
     }
+    .logoEntreprises img{
+        display:none;
+    }
+    .phrase p::first-letter{
+        line-height: 1rem;
+    }
 }
 
 .labo-footer{
     margin: 0px;
-    padding: 5px;
+    padding: 0px;
 	background-color: #e3342f;
 	width:100%;
 	color: white;
@@ -418,6 +470,11 @@ body{
 	display : inline;
 	align-content: space-around;
 	font-size: 14px;
+}
+
+.footer-center{
+    padding: 5px;
+    line-height: 30px;
 }
 
 .tel a{
