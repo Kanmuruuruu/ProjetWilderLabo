@@ -1,8 +1,12 @@
-/*FABLAB*/
-
 @font-face{
     font-family: "theSans";
     src: url("Polices/thesans/TheSans-B4SemiLight.otf") format("otf");
+}
+
+#Services h3{
+    text-align: center;
+    margin: 40px;
+    font-size: 2em;
 }
 
 #image1 {
@@ -23,12 +27,14 @@
 }
 
 #title{
-    margin-left: 25px;
-    margin-top: 15px;
+    text-align: center;
+    font-size: 1.8em;
+    color: #ffffff;
+    
 }
 
 #text{
-    margin: 150px 75px;
+    margin: 190px 75px;
     font-size: 1.2em;
 }
 
@@ -39,13 +45,11 @@
 
 #color{
     background: #e3342f;
-    height: 30px;
     margin-bottom: 15px;
 }
 
 #color2{
     background: #e3342f;
-    height: 30px;
     margin-top: 15px;
 }
 
@@ -115,13 +119,14 @@
     flex-direction: row;
     width: 100%;
     background: #ffffff;
-    margin-bottom: 15px;
+    margin-bottom: 35px;
+    margin-top: 20px;
 }
 
 #titi{
     text-align: center;
-    margin: 15px;
-    font-size: 2em;
+    color: #ffffff;
+    font-size: 1.8em;
 }
 
 .IMG{
@@ -262,7 +267,6 @@ body{
     background-color: #e3342f;
     min-height: 100px;
     color: White;
-    font-size: 20px;
     text-align: justify;
     text-justify: inter-word;
 }
@@ -308,6 +312,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0;
+    padding: 0;
     z-index: 1;
     transform: translateY(100px);
     /*border: 2px solid #e3342f;*/
@@ -322,6 +328,7 @@ body{
     transition: 0.5s;
     color: #e3342f;
     text-align: center;
+    font-size: 0.8em;
 }
 .container .card:hover .face.face1 .content{
     opacity: 1;
@@ -335,7 +342,7 @@ body{
     padding: 0;
     color: #111;
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1em;
 }
 
  .container .card .face.face2{
@@ -365,10 +372,14 @@ body{
 }
 
 .content.techno{
-    max-width: 215px;
+    padding: 5px;
+    width: 200px;
+    position: relative;
 }
 .content.nekoe{
-    max-width: 215px;
+    padding: 5px;
+    width: 200px;
+    position: relative;
 }
 
 .logoEntreprises{
@@ -382,10 +393,10 @@ body{
 }
 
 .phrase{
-    margin: 0px 15% 50px 15%;
-    width:80%;
-
+    margin-left: 10%;
+    margin-bottom: 100px;
 }
+
 
 .phrase p::first-letter{
     color: #e3342f;
@@ -499,8 +510,15 @@ body{
     line-height: 30px;
 }
 
+.footer-center img{
+    width: 70px;
+    height: 70px;
+    padding: 20px;
+}
+
 .tel a{
-	text-decoration: none; color: white;
+    text-decoration: none; 
+    color: white;
 }
 
 a {
@@ -510,9 +528,8 @@ a {
 .footer-icons img{
 	display: inline-block;
 	padding: 10px;
-	flex-basis: 200px;
-	width: 40px;
-	height: 40px;
+	width: 50px;
+	height: 50px;
 	align-content: space-around;
 }
 
