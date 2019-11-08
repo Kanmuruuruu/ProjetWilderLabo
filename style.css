@@ -505,6 +505,11 @@ body{
     line-height: 30px;
 }
 
+.footer-center img{
+    width: 60px;
+    height: 60px;
+    padding: 20px;
+}
 .tel a{
 	text-decoration: none; color: white;
 }
@@ -516,7 +521,6 @@ a {
 .footer-icons img{
 	display: inline-block;
 	padding: 10px;
-	flex-basis: 200px;
 	width: 40px;
 	height: 40px;
 	align-content: space-around;
