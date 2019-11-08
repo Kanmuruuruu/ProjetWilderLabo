@@ -1,8 +1,12 @@
-/*FABLAB*/
-
 @font-face{
     font-family: "theSans";
     src: url("Polices/thesans/TheSans-B4SemiLight.otf") format("otf");
+}
+
+#Services h3{
+    text-align: center;
+    margin: 40px;
+    font-size: 2em;
 }
 
 #image1 {
@@ -259,7 +263,6 @@ body{
     background-color: #e3342f;
     min-height: 100px;
     color: White;
-    font-size: 20px;
     text-align: justify;
     text-justify: inter-word;
 }
@@ -305,6 +308,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0;
+    padding: 0;
     z-index: 1;
     transform: translateY(100px);
     /*border: 2px solid #e3342f;*/
@@ -319,6 +324,7 @@ body{
     transition: 0.5s;
     color: #e3342f;
     text-align: center;
+    font-size: 0.8em;
 }
 .container .card:hover .face.face1 .content{
     opacity: 1;
@@ -332,7 +338,7 @@ body{
     padding: 0;
     color: #111;
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1em;
 }
 
  .container .card .face.face2{
@@ -362,10 +368,14 @@ body{
 }
 
 .content.techno{
-    max-width: 215px;
+    padding: 5px;
+    width: 200px;
+    position: relative;
 }
 .content.nekoe{
-    max-width: 215px;
+    padding: 5px;
+    width: 200px;
+    position: relative;
 }
 
 .logoEntreprises{
@@ -496,8 +506,15 @@ body{
     line-height: 30px;
 }
 
+.footer-center img{
+    width: 70px;
+    height: 70px;
+    padding: 20px;
+}
+
 .tel a{
-	text-decoration: none; color: white;
+    text-decoration: none; 
+    color: white;
 }
 
 a {
@@ -507,9 +524,8 @@ a {
 .footer-icons img{
 	display: inline-block;
 	padding: 10px;
-	flex-basis: 200px;
-	width: 40px;
-	height: 40px;
+	width: 50px;
+	height: 50px;
 	align-content: space-around;
 }
 
