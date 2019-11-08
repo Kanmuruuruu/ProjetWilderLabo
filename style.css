@@ -27,12 +27,14 @@
 }
 
 #title{
-    margin-left: 25px;
-    margin-top: 15px;
+    text-align: center;
+    font-size: 1.8em;
+    color: #ffffff;
+    
 }
 
 #text{
-    margin: 150px 75px;
+    margin: 190px 75px;
     font-size: 1.2em;
 }
 
@@ -43,13 +45,11 @@
 
 #color{
     background: #e3342f;
-    height: 30px;
     margin-bottom: 15px;
 }
 
 #color2{
     background: #e3342f;
-    height: 30px;
     margin-top: 15px;
 }
 
@@ -119,13 +119,14 @@
     flex-direction: row;
     width: 100%;
     background: #ffffff;
-    margin-bottom: 15px;
+    margin-bottom: 35px;
+    margin-top: 20px;
 }
 
 #titi{
     text-align: center;
-    margin: 15px;
-    font-size: 2em;
+    color: #ffffff;
+    font-size: 1.8em;
 }
 
 .IMG{
@@ -388,10 +389,10 @@ body{
 }
 
 .phrase{
-    margin: 0px 15% 50px 15%;
-    width:80%;
-
+    margin-left: 10%;
+    margin-bottom: 100px;
 }
+
 
 .phrase p::first-letter{
     color: #e3342f;
@@ -505,8 +506,15 @@ body{
     line-height: 30px;
 }
 
+.footer-center img{
+    width: 70px;
+    height: 70px;
+    padding: 20px;
+}
+
 .tel a{
-	text-decoration: none; color: white;
+    text-decoration: none; 
+    color: white;
 }
 
 a {
@@ -516,9 +524,8 @@ a {
 .footer-icons img{
 	display: inline-block;
 	padding: 10px;
-	flex-basis: 200px;
-	width: 40px;
-	height: 40px;
+	width: 50px;
+	height: 50px;
 	align-content: space-around;
 }
 
