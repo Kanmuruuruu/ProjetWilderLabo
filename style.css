@@ -10,7 +10,7 @@
 }
 
 #image1 {
-    background: url('Images/industryLab.png'); background-size: contain;
+    background: url('Images/industrylab.png'); background-size: contain;
     background-repeat: no-repeat; background-position: center;
 }
 #image2 {
@@ -22,19 +22,13 @@
     background-repeat: no-repeat; background-position: center;
 }
 #image4 {
-    background: url('Images/industryLab.png'); background-size: contain;
+    background: url('Images/industrylab.png'); background-size: contain;
     background-repeat: no-repeat; background-position: center;
 }
 
-#title{
-    text-align: center;
-    font-size: 1.8em;
-    color: #ffffff;
-    
-}
 
 #text{
-    margin: 190px 75px;
+    margin: 190px 130px;
     font-size: 1.2em;
 }
 
@@ -43,20 +37,43 @@
     flex-direction: column;
 }
 
-#color{
-    background: #e3342f;
-    margin-bottom: 15px;
+
+#title{
+    font-size: 1.8em;
+    width: 8%;
+    margin: 0 auto;
+    margin-bottom: 30px;
 }
 
-#color2{
+#barre{
     background: #e3342f;
-    margin-top: 15px;
+    height: 2px;
+    width: 60%;
+    margin-left: 20%;
+    margin-bottom: 30px;
+}
+
+#titi{
+    font-size: 1.8em;
+    width: 8%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+#barre2{
+    background: #e3342f;
+    height: 2px;
+    width: 60%;
+    margin-top: 40px;
+    margin-left: 20%;
+    margin-bottom: 30px;
 }
 
 #float{
     display: flex;
     
 }
+
 
 #text2{
     text-align: center;
@@ -67,9 +84,7 @@
     width: 50%;
     height: 500px;
     margin: 0 auto;
-    overflow: hidden;
-    background: #ffffff;
-    
+    overflow: hidden;    
 }
 
 @media screen and (max-width:720px){
@@ -171,11 +186,6 @@
     margin-top: 20px;
 }
 
-#titi{
-    text-align: center;
-    color: #ffffff;
-    font-size: 1.8em;
-}
 
 .IMG{
     text-align: center;
