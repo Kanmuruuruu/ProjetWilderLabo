@@ -11,20 +11,28 @@
 }
 
 #image1 {
-    background: url('Images/industrylab.png'); background-size: contain;
-    background-repeat: no-repeat; background-position: center;
+    background-image: url('Images/industrylab.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 #image2 {
-    background: url('Images/fabLab.jpg'); background-size: contain;
-    background-repeat: no-repeat; background-position: center;
+    background-image: url('Images/fabLab.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 #image3 {
-    background: url('Images/fabLab2.jpg'); background-size: contain;
-    background-repeat: no-repeat; background-position: center;
+    background-image: url('Images/fabLab2.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 #image4 {
-    background: url('Images/industrylab.png'); background-size: contain;
-    background-repeat: no-repeat; background-position: center;
+    background-image: url('Images/industrylab.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .title{
@@ -243,6 +251,7 @@ body{
     text-decoration: none;
     font-weight: bold;
     color: white;
+    font-size: 1.3em;
 }
 
 .hover-effect:hover{
@@ -352,11 +361,11 @@ section:target{
 
 #LeLabo{
     background-image: url(Images/Labo2.jpg);
-    margin: 40px 0 0 0;
-    padding: 0;
     min-height: 400px;
+    margin-top: 8vh;
     background-repeat: no-repeat;
-    background-size: auto 100%;
+    background-size: contain;
+    background-position: center;
 }
 
 .descriLabo{
@@ -412,7 +421,7 @@ section:target{
 
 .container .card .face.face1{
     position: relative;
-    background: #EEE;
+    background: #CCC;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -438,14 +447,19 @@ section:target{
 .container .card:hover .face.face1 .content{
     opacity: 1;
 }
+.container .card .face.face1 .content img{
+    width: 60px;
+    height: auto;
+}
+
 .container .card:hover .face.face1 .content img{
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: auto;
 }
 .container .card:hover .face.face1 .content h3{
     margin: 10px 0 0;
     padding: 0;
-    color: #111;
+    color: #e3342f;
     text-align: center;
     font-size: 1em;
 }
@@ -471,7 +485,8 @@ section:target{
 
  .container .card .face.face2 .content p{
     margin: 0;
-    padding: 0;
+    padding: 0 20px;
+    text-align: center;
  }
 .content h4{
     margin: 0;
@@ -490,9 +505,14 @@ section:target{
     font-size: 1.5em;
 }
 .phrase p{
-    padding: 10px;
-    margin: 0px 10px 10px 0;
+    margin: 100px 10px 0px 0;
+    transform: translateY(-50px);
 }
+
+.phrase p::first-line{
+    line-height: 20px;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -572,12 +592,10 @@ section:target{
     }
 
     #LeLabo{
-        background-image: url(Images/Labo2.jpg);
-        margin: 30 0 0 0;
-        padding: 0;
-        min-height: 100px;
+        background-image: url("Images/Labo2.jpg");
         background-repeat: no-repeat;
-        background-size: 100% auto;
+        background-size: contain;
+        background-position: center;
     }
 
     .descriLabo{
@@ -609,7 +627,7 @@ section:target{
 	align-content: center;
 	flex-direction: column;
 	text-align: center;
-	font-size: 15px;
+	font-size: 1em;
 	align-items: stretch;
 }
 .tel{
@@ -638,6 +656,8 @@ a {
 	text-decoration: none;
 }
 
+
+
 .footer-center img{
     margin: 10px;
     padding: 0;
@@ -654,8 +674,16 @@ a {
 
 .footer-author{
 	position: center;
-    font-size: 13px;
-    margin: 0 0 10px 0;
+    margin: 0 0 20px 0;
+}
+.footer-author::after{
+    padding: 10px;
+    content:"Julien is the best ! <3";
+    opacity: 0;
+}
+
+.labo-footer:hover .footer-author::after{
+    opacity: 1;
 }
 
 h3{
