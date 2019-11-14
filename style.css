@@ -40,9 +40,8 @@
 }
 
 
-#title{
+.title{
     font-size: 1.8em;
-    width: 8%;
     margin: 0 auto;
     margin-bottom: 30px;
 }
@@ -670,6 +669,7 @@ a {
 
 h3{
     font-variant: small-caps;
+    text-align: center;
 }
 
 
