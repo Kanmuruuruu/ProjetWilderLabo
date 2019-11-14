@@ -1,6 +1,7 @@
 @font-face{
     font-family: "theSans";
-    src: url("Polices/thesans/TheSans-B4SemiLight.otf") format("otf");
+    src: url("Polices/thesans/TheSans-B4SemiLight.otf") format("otf"),
+        url("Polices/thesans/TheSansPlain.ttf") format("ttf");
 }
 
 #Services h3{
@@ -28,9 +29,10 @@
 
 
 #text{
-    margin: 190px 130px;
+    margin: 150px 75px;
     font-size: 1.2em;
 }
+
 
 #text2{
     display: flex;
@@ -71,7 +73,8 @@
 
 #float{
     display: flex;
-    
+    justify-content: space-around;
+    text-align: justify;   
 }
 
 
@@ -83,13 +86,18 @@
     position: relative;
     width: 50%;
     height: 500px;
-    margin: 0 auto;
-    overflow: hidden;    
+    margin: 0 25px;
+    overflow: hidden;
+    background: #ffffff;
+}
+
+#fablab{
+    display: flex;
+    width: 100%;
+    margin: 0;
 }
 
 @media screen and (max-width:720px){
-    
-
     .servicesAnnexes {
         display: flex;
         justify-content: space-evenly;
@@ -214,13 +222,6 @@
     transform: translateY(0);
 }
 
-
-
-
-*{
-    padding: 0;
-    margin: 0;
-}
 body{
     margin: 0px;
     padding: 0px;
@@ -260,7 +261,7 @@ body{
 .hover-effect:hover{
     background-color: white;
 }
-.hover-effect:hover a{
+.hover-effect:hover{
     color: #e3342f; 
 }
 .navigator img{
@@ -268,6 +269,9 @@ body{
     float:right;
     margin: 0;
     padding: 0;
+}
+.navigator li{
+    font-variant: small-caps;
 }
 
 @media screen and (max-width:720px){
@@ -320,7 +324,7 @@ body{
     }
     .IMG img{
         opacity: 0.5;
-        max-width: 300px;
+        width: 300px;
         margin: 0;
         padding: 0;
     }
@@ -346,16 +350,17 @@ body{
     }
 
 }
-*{
-    margin: 0;
-    padding: 0;
-}
 
 body{
     margin: 0px;
     padding: 0px;
     background-color: white;
-    font-family: 'theSans','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+section:target{
+    padding-top: 9em; 
+    margin-top: -9em;
 }
 
 #LeLabo{
@@ -364,7 +369,7 @@ body{
     padding: 0;
     min-height: 400px;
     background-repeat: no-repeat;
-    background-size: 100% auto;
+    background-size: auto 100%;
 }
 
 .descriLabo{
@@ -373,11 +378,16 @@ body{
     color: White;
     text-align: justify;
     text-justify: inter-word;
+    text-align: center;
 }
 .descriLabo p{
     margin: 0;
     padding:50px;
     line-height: 50px;
+}
+
+.descriLabo p::first-line{
+    font-size: 1.5em;
 }
 
 .services img{
@@ -401,10 +411,12 @@ body{
 .container .card{
     position: relative;
     width: 100%;
-    margin: 10px;
+    margin: 0 15px;
 }
 
 .container .card .face{
+    margin: 0;
+    padding: 0;
     width: 100%;
     height: 200px;
     transition: 0.5s;
@@ -418,8 +430,9 @@ body{
     align-items: center;
     margin: 0;
     padding: 0;
+    width: 100%;
     z-index: 1;
-    transform: translateY(100px);
+    transform: translateY(75px);
     /*border: 2px solid #e3342f;*/
 }
 .container .card:hover .face.face1{
@@ -438,8 +451,8 @@ body{
     opacity: 1;
 }
 .container .card:hover .face.face1 .content img{
-    width: 48px;
-    height: 48px;
+    width: 50px;
+    height: 50px;
 }
 .container .card:hover .face.face1 .content h3{
     margin: 10px 0 0;
@@ -456,13 +469,15 @@ body{
     justify-content: center;
     align-items: center;
     transform: translateY(-100px);
-    padding:5px;
+    margin: 0;
+    padding: 0;
+    width:100%;
     font-size: 14px;
     color:white;
  }
 
  .container .card:hover .face.face2{
-    transform: translateY(0px);
+    transform: translateY(-50px);
     color: #111;
  }
 
@@ -475,38 +490,32 @@ body{
     padding: 0;
 }
 
-.content.techno{
-    padding: 5px;
-    width: 200px;
-    position: relative;
-}
-.content.nekoe{
-    padding: 5px;
-    width: 200px;
-    position: relative;
-}
-
-.logoEntreprises{
-    display:flex;
-    justify-content: center;
-}
-.logoEntreprises img{
-    width: auto;
-    height: 150px;
-    margin: 0px 100px 100px 100px;
-}
-
 .phrase{
-    margin-left: 10%;
-    margin-bottom: 100px;
+    margin: 0 15%;
+    margin-bottom: 50px;
+    padding: 0;
+    text-align: center;
+}
+.titre{
+    color: red;
+    font-style: italic;
+    font-size: 1.5em;
+}
+.phrase p{
+    padding: 10px;
+    margin: 0px 10px 10px 0;
+}
+*{
+    margin: 0;
+    padding: 0;
 }
 
-
-.phrase p::first-letter{
-    color: #e3342f;
-    font-size:5rem;
+#slider2 img{
+    width: 100%;
+    height: auto;
 }
 
+/* ************************************************************ */
 
  @media screen and (max-width: 720px) {
     .services{
@@ -639,15 +648,116 @@ a {
 	text-decoration: none;
 }
 
+.footer-center img{
+    margin: 10px;
+    padding: 0;
+}
+
 .footer-icons img{
 	display: inline-block;
-	padding: 10px;
+    padding: 0px;
+    margin: 0;
 	width: 30px;
 	height: 30px;
-	align-content: space-around;
+    align-content: space-around;
 }
 
 .footer-author{
 	position: center;
-	font-size: 13px;
+    font-size: 13px;
+    margin: 0 0 10px 0;
+}
+
+h3{
+    font-variant: small-caps;
+}
+
+
+@media screen and (max-width: 720px) {
+
+    .navigator ul{
+        position: fixed;
+    }
+    .navigator img{
+        width: 36px;
+        height: 36px;
+    }
+
+    #LeLabo{
+        display: none;
+    }
+    .descriLabo{
+        margin: 15px;
+        background-color: white;
+        color: black;
+        font-size: 1em;
+        text-align: center;
+    }
+    .descriLabo p {
+        line-height: 1.2em;
+    }
+
+    .descriLabo p::first-line{
+        color:#e3342f;
+        font-size: 20px;
+        padding: 10px;
+    }
+    .phrase{
+        padding: 15px;
+        border: 1px solid #e3342f;
+        font-size: 15px;
+    }
+
+    .container .card .face.face2{
+        padding: 10px;
+        text-align: center;
+    }
+    .container .card .face{
+        margin: 0;
+        padding: 0;
+        height: 200px;
+        width: 100%;
+    }
+
+    .container .card .face.face1{
+        margin: 0;
+        padding: 0;
+        height: 75px;
+    }
+    .container .card .face.face2{
+        margin: 20px 0;
+        padding: 0;
+        height: auto;
+        font-size: 15px
+    }
+    .container .card .face.face1 .content img{
+        display: none;
+    }
+
+    h3{
+        font-size: 1.2em;
+    }
+
+    .navigator li{
+        font-size: 15px;
+        font-variant: small-caps;
+    }
+    #fablab{
+        margin: 0;
+        padding: 0;
+    }
+    #slider1{
+        display: none;
+        margin: 0;
+        padding: 0;
+    }
+    #float{
+        margin: 0;
+        padding: 10px;
+    }
+    #text{
+        margin: 0;
+        padding: 0;
+        font-size: 15px;
+    }
 }
