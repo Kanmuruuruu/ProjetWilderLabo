@@ -27,19 +27,6 @@
     background-repeat: no-repeat; background-position: center;
 }
 
-
-#text{
-    margin: 150px 75px;
-    font-size: 1.2em;
-}
-
-
-#text2{
-    display: flex;
-    flex-direction: column;
-}
-
-
 .title{
     font-size: 1.8em;
     margin: 0 auto;
@@ -70,15 +57,21 @@
     margin-bottom: 30px;
 }
 
-#float{
+#fablab{
     display: flex;
     justify-content: space-around;
-    text-align: justify;   
+    align-items: center;
 }
 
+#float{
+    width: 50%;
+}
 
-#text2{
-    text-align: center;
+#text{
+    margin: 0;
+    padding: 0 30px;
+    font-size: 1.2em;
+    transform: translateY(-50%);
 }
 
 #slider1 {
@@ -90,11 +83,6 @@
     background: #ffffff;
 }
 
-#fablab{
-    display: flex;
-    width: 100%;
-    margin: 0;
-}
 
 @media screen and (max-width:720px){
     .servicesAnnexes {
@@ -387,6 +375,7 @@ section:target{
 
 .descriLabo p::first-line{
     font-size: 1.5em;
+    line-height: 50px;
 }
 
 .services img{
@@ -603,7 +592,9 @@ section:target{
         display:none;
     }
     .phrase p::first-letter{
-        line-height: 1rem;
+        padding: 0;
+        margin: 0;
+        line-height: 50px;
     }
 }
 
@@ -734,6 +725,10 @@ h3{
         display: none;
     }
 
+    .container .card .face.face2 .content{
+        padding: 0 15px;
+    }
+
     h3{
         font-size: 1.2em;
     }
@@ -759,5 +754,7 @@ h3{
         margin: 0;
         padding: 0;
         font-size: 15px;
+        transform: translateY(0);
+        text-align: center;
     }
 }
